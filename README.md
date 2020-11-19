@@ -13,7 +13,7 @@ run the container
 docker-compose up -d
 ```
 
-logs
+Check the logs
 ```
 docker-compose logs -f
 ```
@@ -25,12 +25,3 @@ source env/bin/activate
 ```
 
 manage.py is in hello_django folder
-
-If docker build is failed to locate the docker file. Specify where the Dokcerfile is located.
-look at this snippit of code in docker-compose.yml
-
-```
-    build:
-      context: .
-      dockerfile: Dockerfile
-```
